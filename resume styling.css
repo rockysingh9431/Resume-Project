@@ -1,0 +1,485 @@
+body {
+    flex-wrap: wrap;
+}
+
+
+/* ---------header section---------*/
+
+header {
+    height: 75vh;
+    width: 100%;
+}
+
+section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section:nth-child(2n) {
+    background-color: #d9f3d9;
+}
+
+section:nth-child(2n+1) {
+    background-color: rgb(255, 215, 215);
+}
+
+header {
+    background-image: url(https://www.bleepstatic.com/content/posts/2018/08/06/Surface-Book-2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+
+/* -------------horizontal list------------*/
+
+.horizontal-list {
+    width: auto;
+    list-style: none;
+}
+
+.horizontal-list li {
+    display: inline-block;
+    margin: 0px 30px 30px 0px;
+    font-size: 1.3rem;
+    font-family: calibri;
+}
+
+
+/* --------------- Name and Social icons -------------*/
+
+#name {
+    text-align: center;
+    font-size: 5rem;
+    color: white;
+}
+
+.horizontal-list li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-menu li a:hover {
+    color: aquamarine;
+    border-bottom: 1px solid white;
+}
+
+.nav-menu {
+    transition: color 0.5s, border-bottom 5s;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.social-icons {
+    margin-top: -9vh;
+    width: auto;
+}
+
+.social-icons li a i {
+    font-size: 1.3rem;
+    padding: 5px;
+    border-radius: 50%;
+    flex-wrap: wrap;
+}
+
+.social-icons li a i:hover {
+    box-shadow: 0px 0px 4px 4px grey;
+}
+
+.social-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/*----------------- ABOUT INFO -----------------*/
+
+.about {
+    position: relative;
+}
+
+.my-image {
+    margin-top: -17vh;
+    height: auto;
+    width: auto;
+}
+
+.my-image img {
+    height: 14rem;
+    width: 15rem;
+    border-radius: 50%;
+}
+
+#my-info {
+    margin-left: 120px;
+    width: 80%;
+    height: auto;
+    font-size: 1.3rem;
+}
+
+
+/*-------------skills section---------*/
+
+.section-heading {
+    width: auto;
+    padding: 20px 10px 10px;
+    font-weight: 400;
+    margin-bottom: 60px;
+}
+
+.section-heading span {
+    font-size: 40px;
+    color: darkblue;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+}
+
+.skills-display {
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin-bottom: 80px;
+    justify-content: space-evenly;
+}
+
+.skill-progress {
+    margin: 25px;
+    border-radius: 1.1rem;
+    height: 2.2rem;
+    width: 11rem;
+    background-color: #f3e7e7;
+    border-color: #f3e7e7;
+    box-shadow: 2px 2px 2px 2px #b9b9b9 inset;
+    overflow: hidden;
+}
+
+.skill-progress>div {
+    border-radius: 18px 0px 0px 20px;
+    box-shadow: 1px 1px 5px 2px #989882;
+}
+
+.skill-name {
+    padding: 6px;
+    width: 130px;
+    height: 2.2rem;
+    color: black;
+}
+
+.skill-name span {
+    color: white;
+    margin-left: 15px;
+    font-size: 1.2rem;
+}
+
+.mb75px {
+    margin-bottom: 75px;
+}
+
+.Cplus {
+    background-color: #0a0b32;
+    width: 60%
+}
+
+.java {
+    background-color: #8f0249;
+    width: 50%
+}
+
+.javascript {
+    background-color: #0a4146;
+    width: 70%
+}
+
+.CSS {
+    background-color: #042205;
+    width: 80%
+}
+
+.HTML {
+    background-color: #b52909;
+    width: 70%
+}
+
+.Android {
+    background-color: #3a024cf2;
+    width: 70%
+}
+
+.ios {
+    background-color: #112426;
+    width: 30%
+}
+
+.Nodejs {
+    background-color: #3d3054;
+    width: 60%
+}
+
+
+/*------------------experience---------------------*/
+
+.timeline {
+    position: relative;
+    width: 75%;
+}
+
+.timeline-box {
+    padding: 5px;
+    width: 40%;
+    min-height: 150px;
+    position: relative;
+    left: 5%;
+    text-align: right;
+}
+
+.timeline-box::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: lightgrey;
+    top: 25%;
+    border-radius: 50%;
+    z-index:1 ;
+}
+
+.timeline-box:nth-child(2n) {
+    left: 53.1%;
+}
+
+.timeline-box:nth-child(2n+1)::after {
+    right: -11.8%;
+}
+
+.timeline-box:nth-child(2n)::after {
+    left: -9%;
+}
+
+.timeline-container {
+    padding: 8px;
+}
+
+.timeline-logo {
+    position: absolute;
+    width: 50px;
+    overflow: hidden;
+}
+
+.timeline-logo>img {
+    width: 100%;
+}
+
+#timeline-divider {
+    position: absolute;
+    width: 0;
+    top: 10%;
+    left: 50%;
+    border: 1px dashed #0096fa6b;
+    height: 66%;
+}
+
+#timeline-divider .timeline-traveller {
+    position: sticky;
+    top: 135px;
+    z-index: 2;
+}
+
+#timeline-divider i {
+    transform: rotate(90deg);
+    margin-top: -35px;
+    display: flex;
+    color: #2857a4;
+}
+
+.experience-designation {
+    font-size: 1.4rem;
+}
+
+.experience-company-name {
+    margin: 5px 0 0;
+    color: #eb822d;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.experience-duration {
+    color: #9e9b9b;
+    font-weight: 100;
+    color: grey;
+    font-size: 1rem;
+}
+
+.experience-description li {
+    font-size: 14px;
+    padding: 2px;
+    color: grey;
+    line-height: 20px;
+}
+
+.text-align-justify li {
+    text-align: justify;
+}
+
+
+/*--------------portfolio------------*/
+
+.portfolio-display {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 50px;
+    margin-bottom: 20px;
+    justify-content: space-around;
+}
+
+.portfolio-image-container {
+    max-width: 300px;
+    overflow: hidden;
+    margin: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.portfolio-image-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio-details {
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    color: transparent;
+    text-align: center;
+    padding: 10px;
+    font-size: xx-large;
+}
+
+.portfolio-image-container:hover {
+    box-shadow: 0 0 20px #90c0d1;
+}
+
+.portfolio-image-container:hover .portfolio-details {
+    background-color: #80808078;
+    color: rgb(255, 255, 255);
+}
+
+
+/*----------------------contact section----------------------*/
+
+.contact {
+    background-image: linear-gradient(50deg, #2857a4 0%, #403066 74%);
+    flex-wrap: wrap;
+    color: white;
+    ;
+}
+
+.contact>div>span {
+    color: white;
+    font-size: 3rem;
+}
+
+.contact-display {
+    height: auto;
+    width: 100%;
+    display: flex;
+}
+
+.form-details {
+    width: 50%;
+    display: inline-block;
+    margin: 30px;
+}
+
+.info {
+    height: 70vh;
+}
+
+.info div input {
+    margin-left: 70px;
+    display: block;
+    padding: 4px 10px;
+    height: 4rem;
+    width: 38vw;
+    border: 0px solid transparent;
+    border-bottom: 2px solid white;
+    color: rgb(255, 255, 255);
+    background: transparent;
+    font-size: 1.2rem;
+}
+
+.info div textarea {
+    margin-left: 70px;
+    display: flex;
+    padding: 4px 10px;
+    height: 4rem;
+    width: 38vw;
+    border: 0px solid transparent;
+    border-bottom: 2px solid white;
+    color: rgb(255, 255, 255);
+    background: transparent;
+    font-size: 1.2rem;
+}
+
+#button {
+    margin: 50px;
+    width: 14vw;
+    height: auto;
+    margin-left: 14vw;
+    background-color: transparent;
+    color: white;
+    height: 2.7rem;
+    border: 2px solid white;
+    font-size: 1.2rem;
+}
+
+aside {
+    margin: 30px;
+    margin-left: 10vw;
+}
+
+.contact-info {
+    display: inline-block;
+    width: auto;
+}
+
+.contact-info h1 {
+    font-size: 2rem;
+}
+
+.contact-info p {
+    font-size: 1.2rem;
+}
+
+.my-info div {
+    justify-content: space-around;
+    margin: 12px;
+    font-size: 1.1rem;
+}
+
+.my-info span {
+    margin-left: 10px;
+}
+
+
+/*-------------------randm---------------*/
+
+.m-blue {
+    color: #2857a4;
+}
+
+.m0 {
+    margin: 0;
+}
